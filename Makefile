@@ -1,6 +1,6 @@
 .PHONY: source
 source:
-	fish -C "python3 -m venv .ven; source .venv/bin/activate.fish
+	fish -C "python3 -m venv .venv; source .venv/bin/activate.fish"
 
 .PHONY: run
 run:
