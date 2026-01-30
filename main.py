@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
     conn = psycopg2.connect(dsn)
     cur = conn.cursor()
-    cur.execute("SELECT id FROM cards WHERE card_category = 1 AND regulation_mark IN ('G', 'H', 'I', 'J') ORDER BY id")
+    cur.execute("SELECT id FROM cards WHERE card_category = 1 AND regulation_mark IN ('H', 'I', 'J') ORDER BY id")
 
     for row in cur:
         card_id = row[0]
